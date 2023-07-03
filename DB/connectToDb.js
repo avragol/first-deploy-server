@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const chalk = require("chalk");
 
 mongoose
-  .connect("mongodb://127.0.0.1/business_card_app", {
+  .connect(`${process.env.ATLAS_URL}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

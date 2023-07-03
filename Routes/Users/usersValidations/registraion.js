@@ -15,7 +15,7 @@ function validateRegistration(user) {
     city: Joi.string().min(2).max(256).required(),
     street: Joi.string().min(2).max(256).required(),
     houseNumber: Joi.string().min(1).max(256).required(),
-    zipCode: Joi.number().min(1).max(256).allow(""),
+    zip: Joi.number().min(1).max(256).allow(""),
     biz: Joi.boolean(),
   });
 
